@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Detail Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0f172a;
+      font-family: Arial, sans-serif;
+    }
+
+    .form-box {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 350px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00f5ff;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #00f5ff;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ff;
+    }
+  </style>
+</head>
+
+<body>
+
+<form class="form-box"
+      action="https://formsubmit.co/pateldj9003@gmail.com"
+      method="POST">
+
+  <h2>User Details</h2>
+
+  <input type="text" name="Name" placeholder="Enter Name" required>
+
+  <input type="tel" name="Mobile Number"
+         placeholder="Enter Mobile Number"
+         pattern="[0-9]{10}"
+         required>
+
+  <input type="number" name="Age" placeholder="Enter Age" required>
+
+  <!-- FormSubmit Settings -->
+  <input type="hidden" name="_subject" value="New User Form Submission">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
